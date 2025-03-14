@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criação de Formulários">
+    <meta name="author" content="Anna Gabriela">
+    <title> Criação de Formulário </title>
+</head>
+<body>
+    <h1> Formulários </h1>
+    <hr>
+
+    <form name="Formulários" method="post">
+
+        Nome: <input type="text" name="Nome" id="Nome"> <br>
+        Introduza a sua password: <input type="password" name="palavra-chave" id="pass"> <br> 
+        Data de Nascimento <input type="date" name="Data de Nascimento" id="DN"> <br>
+        Telefone <input type="tel" name="Telefone" id="phone" placeholder="123-456-789" pattern="[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]"> <br>
+        E-mail <input type="email" name="email" id="Email"> <br>
+        Gênero: <br>
+        <input type="radio" name="Masculino" id="male" > Masculino <br>
+        <input type="radio" name="Feminino" id="female"> Feminino <br>
+        <input type="radio" name="Outros" id="other"> Outros <br>
+        
+        Nacionalidade: <br> 
+        <select name="Nacionalidade" id="Nacionalidade">
+            <option value="Nacionalidade">Portuguesa</option> <br>
+            <option value="Nacionalidade">Brasileira</option> <br>
+
+        </select> <br>
+
+        Escolheu este curso por motivos profissionais ? <br>
+        <input type="checkbox" name="Yes" id="Yes"> Sim <br>
+        <input type="checkbox" name="No" id="No"> Não <br>
+
+        Descreva as suas motivações para frequentar este curso. <br>
+        <textarea name="description" id="description" cols="50" rows="25" placeholder="Escreva aqui.">  </textarea> <br>
+
+        Numa escala de 1 a 5 como avalia este curso? <br>
+        <input type="range" name="Scale" id="Scale" min="1" max="5"> <br>
+
+        <hr>
+
+        <button type="submit">Enviar Fomulário</button>
+         <button type="reset"> Apagar Formulário</button>
+            
+
+        
+
+    </form>
+    
+</body>
+</html>
