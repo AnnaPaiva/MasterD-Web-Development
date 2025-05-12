@@ -1,0 +1,29 @@
+#list-1{
+    background-color: #fcfc95;
+    border-left: 35px solid #fde50c ;
+    border-top: 10px solid #f7ea2e ;
+    border-bottom: 10px solid #f7ea2e;
+    border-right: 10px solid #f7ea2e ;
+    list-style-position: outside;
+    list-style-type: upper-roman;
+    padding-left: 20px;
+    padding: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+
+
+#list-2{
+    background-color: #95dffc;
+    border-left: 20px solid #0972fc;
+    border-top: 10px solid #0972fc;
+    border-bottom: 10px solid #0972fc;
+    border-right: 10px solid #0972fc;
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 0.5%;
+    padding: 10px;
+
+}
+   

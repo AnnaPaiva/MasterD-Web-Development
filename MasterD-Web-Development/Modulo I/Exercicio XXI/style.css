@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    color: aliceblue;
+}
+
+h2 {
+    margin: auto;
+    padding: 20px;
+    color: aliceblue;
+    border: 2px solid #80a2ff;
+    width: 50%;
+    background-color: #80a2ff;
+    text-align: center;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 28px;
+
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 28px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 28px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 28px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+
+img {
+    width: 100%;
+    opacity: 50%;
+
+}
