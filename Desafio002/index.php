@@ -21,7 +21,10 @@
       echo "<h2> O número gerado foi: <strong>$res</strong> </h2>";
       
       ?>
+
+
         <input type="submit" value="Gerar outro" />
+
     </section>
 
 
@@ -30,6 +33,7 @@
         window.location.reload();
     };
     </script>
+
 
 
 </body>

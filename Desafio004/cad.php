@@ -46,8 +46,8 @@
         $result = $value * $usd;
         $result2 = $value * $eur;
 
-        echo "<p>Com R$".number_format($value, 2, ',', '.')." você pode comprar U$".number_format($result, 2, ',', '.')."</p>";
-        echo "<p>Com R$".number_format($value, 2, ',', '.')." você pode comprar €".number_format($result2, 2, ',', '.')."</p>";
+        echo "<p>Com R$".number_format($value, 2, ',', '.')." você pode comprar U$ <strong>".number_format($result, 2, ',', '.')." </strong></p>";
+        echo "<p>Com R$".number_format($value, 2, ',', '.')." você pode comprar € <strong>".number_format($result2, 2, ',', '.')." </strong></p>";
     } else {
         echo "<p>Insira um valor</p>";
     }

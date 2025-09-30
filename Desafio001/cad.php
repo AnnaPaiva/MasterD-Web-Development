@@ -25,11 +25,7 @@
         ?>
         <br>
 
-        <div>
-            <input type="button" value="Voltar" onclick="window.location.href='index.html'">
-
-            </input>
-        </div>
+        <button> <a href="index.html">&#x2B05; Voltar </a></button>
 
 
 

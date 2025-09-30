@@ -10,7 +10,7 @@
 
 <body>
 
-    <section>
+    <header>
 
         <h1>Conversor de moedas</h1>
         <?php 
@@ -23,23 +23,11 @@
             //echo "<li> € " . $Euro . " </li> </ul>";
             //echo "<p> <strong>*Cotação utilizada:</strong> &#9658 US$ 1,00 = R$ 5,37  <br>
             // &#9658 € 1,00 = R$ 6,27 </p>";
-
-             $inicio = date("m-d-Y", strtotime("-7 days"));
-            $fim = date("m-d-Y");
-
-            $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\''. $inicio .'\'&@dataFinalCotacao=\''. $fim .'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
-
-            $dados = json_decode(file_get_contents($url), true);
-
-        
-
-            $cotação = $dados["value"][0]["cotacaoCompra"];
-            
             $real = $_GET['numero'] ?? 0;
-            $dolar = $real / $cotação;
-            $euro = $real / $cotação;
+            $dolar = $real / 5.37;
+            $euro = $real / 6.27;
             $padrão = numfmt_create ("pt_BR", NumberFormatter::CURRENCY);
-            echo "<p> Seus " . numfmt_format_currency($padrão, $real, "BRL") . "  equivalem a : <strong>  " . numfmt_format_currency($padrão, $dolar, "USD") . "</strong>";
+            echo "<p> Seus " . numfmt_format_currency($padrão, $real, "BRL") . "  equivalem a : <strong>  " . numfmt_format_currency($padrão, $dolar, "USD") . "</strong> e <strong>" . numfmt_format_currency($padrão, $euro, "EUR </strong></p>");
         ?>
         <br>
 
@@ -47,7 +35,7 @@
 
 
 
-    </section>
+    </header>
 </body>
 
 </html>

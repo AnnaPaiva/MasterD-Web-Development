@@ -20,7 +20,7 @@
        echo "<p> É um prazer te conhecer <strong> $nome $sobrenome!</strong> Este é o meu site!";
         
         ?>
-        <p> <a href="javascript:history.go(-1)">Voltar para a página anterior</a>
+        <p> <a href="javascript:history.go(-1)">&#x2B05; Voltar para a página anterior</a>
     </main>
 </body>
 
