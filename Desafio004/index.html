@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informe um Número</title>
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Informe um Número</h1>
-    </header>
     <section>
-      <form action="cad.php" method="get">
-        <label for="numero">número</label>
+      <h1>Conversor de Moedas v2.0</h1>
+
+      <form action="cad.php" method="POST">
+        <label for="numero">Quantos reais R$ você tem na sua carteira ?</label>
+        <br />
         <input type="number" name="numero" id="idnumero" />
 
-        <input type="submit" value="Calcular" />
+        <input type="submit" value="Converter" />
       </form>
     </section>
   </body>

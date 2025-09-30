@@ -26,7 +26,9 @@
         <br>
 
         <div>
-            <p> <a href="javascript:history.go(-1)"> &#x21BB Voltar </a></p>
+            <input type="button" value="Voltar" onclick="window.location.href='index.html'">
+
+            </input>
         </div>
 
 
