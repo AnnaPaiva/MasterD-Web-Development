@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario com PHP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulario com PHP</h1>
+    </header>
+
+    <main>
+      <form action="form.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="txt">Morada:</label>
+        <input type="text" id="txt" name="txt" required />
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" required />
+
+        <p>Tem animais de estimação ?</p>
+        <input type="radio" name="animais" id="sim" value="sim" />
+        <label for="sim">Sim</label>
+        <input type="radio" name="animais" id="nao" value="nao" />
+        <label for="nao">Não</label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
