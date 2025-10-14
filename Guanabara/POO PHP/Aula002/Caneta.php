@@ -19,33 +19,29 @@
         var $carga;
         var $tampada;
 
+        function Caneta(){
+            return "Olá, minha caneta tem a cor  {$this->cor} e tem ponta {$this->ponta}.<br>";
+        }
         function rabiscar (){
+            if ($this->tampada == true){
+                return "ERRO! Não posso rabiscar<br>";
+            } 
+             else{
             echo "Estou rabiscando com a caneta $this->cor, com ponta $this->ponta <br>";
         }
-        function tampar(){
-           
         }
-        function destampar(){
-
-        }   
+        function tampar(){
+         $this->tampada = true;
     }
-    
 
-    ?>
-    <?php 
-     require_once 'Caneta.php';
-      $c1 = new Caneta(); 
-      $c1->cor = "Azul";
-      $c1->ponta = 0.5;
-      $c1->tampada = true;
-      $c1->rabiscar();
-
-     //  echo "<pre>" ;
-       //print_r($c1);
-       //echo "</pre>" ;
+    function destampar(){
+         $this->tampada = false;
+         }
+        }   
         
-     
+       
     ?>
+
 </body>
 
 </html>
