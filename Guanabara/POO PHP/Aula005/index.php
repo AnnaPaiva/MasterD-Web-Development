@@ -23,7 +23,7 @@
         Sua conta de número {$cb->getNumConta()} do tipo {$cb->getTipo()} foi criada com sucesso!<br>
         Seu saldo atual é de R$ {$cb->getSaldo()}<br> </p>";
         $cb->depositar(500);
-        $cb->sacar(200);
+        $cb->sacar(400);
         $cb->fecharConta();
         $cb->pagarMensal();
 

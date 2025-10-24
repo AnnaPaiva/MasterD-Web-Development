@@ -78,8 +78,11 @@
                 $v = 20;
             }
             if ($this->getStatus()) {
+                $this->getSaldo() >= $v;
                 ($this->setSaldo($this->getSaldo() - $v));
                 echo "<p>Mensalidade de R$ {$v} debitada na conta de {$this->dono}. Seu saldo atual é de R$ {$this->getSaldo()}</p> ";
+            } elseif ($this->getSaldo() < $v) {
+                echo "<p>Saldo insuficiente para pagar a mensalidade!</p>";
             } else {
                 echo "<p>Impossível pagar uma conta fechada!</p>";
             }

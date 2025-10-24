@@ -1,0 +1,4 @@
+IP: ::1 | Data e hora: 2025-10-24 18:18:25 | Porta: 57576 | URL: /masterDweb/PHP/fullStack/ex009/gravar_dados.php
+IP: ::1 | Data e hora: 2025-10-24 18:18:37 | Porta: 62596 | URL: /masterDweb/PHP/fullStack/ex009/gravar_dados.php
+IP: ::1 | Data e hora: 2025-10-24 18:21:33 | Porta: 55356 | URL: /masterDweb/PHP/fullStack/ex009/gravar_dados.php
+IP: ::1 | Data e hora: 2025-10-24 18:21:54 | Porta: 62710 | URL: /masterDweb/PHP/fullStack/ex009/gravar_dados.php
