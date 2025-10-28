@@ -12,22 +12,31 @@
     <pre>
         <?php
         require_once 'ContaBanco.php';
-        $cb = new ContaBanco();
-        $cb->setNumConta(2222);
-        $cb->setTipo("CC");
-        $cb->setDono("Jubileu");
-        $cb->setSaldo(1000);
-        $cb->setStatus(true);
+        $cb1 = new ContaBanco(); //Jubileu
+        $cb2 = new ContaBanco(); // Creuza
+        $cb1->abrirConta("CC");
+        $cb1->setNumConta(1111);
+        $cb1->setDono("Jubileu");
+        $cb2->abrirConta("CP");
+        $cb2->setNumConta(2222);
+        $cb2->setDono("Creuza");
 
-        echo "<p>Seja bem-vindo(a) senhor(a) {$cb->getDono()}!<br>
-        Sua conta de número {$cb->getNumConta()} do tipo {$cb->getTipo()} foi criada com sucesso!<br>
-        Seu saldo atual é de R$ {$cb->getSaldo()}<br> </p>";
-        $cb->depositar(500);
-        $cb->sacar(400);
-        $cb->fecharConta();
-        $cb->pagarMensal();
+        $cb1->depositar(300);
+        $cb2->depositar(500);
 
-        // print_r($cb);
+        $cb2->sacar(1000);
+
+        $cb1->pagarMensal();
+        $cb2->pagarMensal();
+
+        $cb1->sacar(338);
+        $cb2->sacar(630);
+        $cb1->fecharConta();
+        $cb2->fecharConta();
+
+
+        print_r($cb1);
+        print_r($cb2);
 
         ?>
     </pre>
